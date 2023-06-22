@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add skatepark!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+body {
+    background-color: #2c3e50;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.btn {
+    background-color: #2980b9;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1c628a;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #165173;
+    color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.input_box {
+    padding: 0.1cm;
+}
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    border-color: #3366ff;
+    box-shadow: 0 0 5px rgba(51, 102, 255, 0.5);
+}
+</style>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Add Skatepark!
+        </h1>
+        <div class="card">
+            <form action="result">
+                <div class="input_box">
+                    <span class="subheading" id="basic-addon1">Name: </span>
+                    <input type="text" name="name" class="input" placeholder="Skatepark's Name" aria-label="Name" aria-describedby="basic-addon1" value="" required>
+                </div>
+                <div class="input_box">
+                    <input type="number" class="input" placeholder="Latitude" aria-label="Latitude" step="0.000001" name="latitude" value="" required>
+                    <span class="subheading">, </span>
+                    <input type="number" class="input" placeholder="Longitude" aria-label="Longitude" step="0.000001" name="longitude" value="" required>
+                    <button class="btn" type="submit" id="button-addon2" value="Submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
